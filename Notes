@@ -1,0 +1,40 @@
+-------------Automating Angular Applications using Selenium with NgWebDriver---------------
+
+
+
+Automating Angular Applications using the Selenium library poses several challenges. 
+As we look into these challenges it might be meaningful for us to understand more about Angular and how this is different from normal web applications from an automation perspective.
+
+Angular is an open-source, typescript-based, front-end web framework for creating dynamic web applications.
+Angular extends HTML and sets new attributes called directives that create dynamic HTML content. 
+
+It is being widely used due to its innate characteristics that include the ability to load content dynamically, single-page application creation capability, and the efficiency with which it can render data in tables. Version 1 is called “AngularJS”, version 2 and above have been renamed to just simple “Angular”.
+
+Components are the building blocks of Angular applications that consist of an HTML template, a typescript class, a CSS selector, and CSS styles. The API feature of Angular enables the dynamic component loading feature and helps applications load new components at run time.
+
+----------------------------------Ways to identify an Angular Application/Website----------------------------
+
+The properties that highlight or characterize a DOM element are encapsulated in a directive. These directives provide the behavioral abilities to the DOM element. 
+The directives comprise ng-bind, ng-model, ng-class, ng-repeat, ng-version, ng-click, etc. If any of these directives are being used either in the website or in the application, 
+it can be identified as Angular by checking the source in the browser console.
+
+----------------------Challenges in Automating Angular------------------------------------------------------
+
+The major challenge in automating an AngularJS app using selenium is synchronization and the absence of angular-specific locating strategies like ngmodel, ngrepeater, ngbinding, etc.
+
+While protractor is a better choice for Angular applications for automation, that is not being considered for current discussion as the focus for this writing is Ngwebdriver. Now, let us take a look at the ways with which we can overcome the above challenges in selenium.
+
+NgWebDriver:
+NgWebDriver can be used in selenium as a tool to address the above-mentioned challenges. It is a small library of web driver locators and more Angular for Java. It works with Chrome, Firefox, and all the other Selenium WebDriver browsers. This library acquires all the required features to automate Angular applications using Selenium with Java.
+
+-----------------------------------------Advantages of using NgWebDriver are:------------------------------------------
+
+Handles Angular requests waiting without any extra javascript code
+It provides users with new locator strategies for locating angular specific attributes
+It provides FindBy annotations for creating Page Object Factories
+The challenges can be overcome effectively by using ngwebdriver as it allows the ability to write scripts in java language without causing synchronization issues.
+
+Selenium supports different wait conditions like implicit, explicit, and fluent waits but these wait conditions might not be ideal for angular applications.
+
+Using ngWebdriver in Selenium
+To use ngWebDriver in selenium all you need to do is just add the maven dependency from mvnrepository
